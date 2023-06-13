@@ -23,6 +23,27 @@
   position: relative;
 }
 
+.traffic-lights::before {
+  content: "";
+  width: 100px;
+  height: 50px;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: black;
+}
+.traffic-lights::after {
+  content: "";
+  width: 30px;
+  height: 60%;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: black;
+}
+
 .shadow {
   position: absolute;
   top: 0;
@@ -113,25 +134,4 @@
   100% {
     background-color: #00aa00;
   }
-}
-
-.traffic-lights::before {
-  content: "";
-  width: 5em;
-  height: 3em;
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  background: black;
-}
-.traffic-lights::after {
-  content: "";
-  width: 30px;
-  height: 100%;
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  background: black;
 }
