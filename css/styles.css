@@ -7,7 +7,7 @@
   max-width: 100%;
 }
 
-body {
+.body {
   background-image: url("/images/traffic-jam2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -113,4 +113,25 @@ body {
   100% {
     background-color: #00aa00;
   }
+}
+
+.traffic-lights::before {
+  content: "";
+  width: 5em;
+  height: 3em;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: black;
+}
+.traffic-lights::after {
+  content: "";
+  width: 50px;
+  height: 100%;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: black;
 }
