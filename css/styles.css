@@ -1,0 +1,116 @@
+/* CSS styles */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+body {
+  background-image: url("/images/traffic-jam2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.traffic-lights {
+  width: 200px;
+  height: 500px;
+  background-color: black;
+  border: 20px solid black;
+  border-radius: 20px;
+  padding: 35px;
+  position: relative;
+}
+
+.shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: rgba(500, 500, 500, 0.2);
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.red {
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  border-radius: 50%;
+  margin: auto;
+  margin-bottom: 35px;
+  animation: redLight 10s linear infinite;
+}
+
+.yellow {
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  border-radius: 50%;
+  margin: auto;
+  margin-bottom: 35px;
+
+  animation: yellowLight 10s linear infinite;
+}
+
+.green {
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  border-radius: 50%;
+  margin: auto;
+
+  animation: greenLight 10s linear infinite;
+}
+
+/* CSS Animations */
+
+@keyframes redLight {
+  0% {
+    background-color: #111;
+  }
+  2%,
+  50% {
+    background-color: #c0392b;
+  }
+  52%,
+  100% {
+    background-color: #111;
+  }
+}
+
+@keyframes yellowLight {
+  0%,
+  20% {
+    background-color: #111;
+  }
+  22%,
+  50% {
+    background-color: #fbc00c;
+  }
+  52%,
+  80% {
+    background-color: #111;
+  }
+  82%,
+  100% {
+    background-color: #fbc00c;
+  }
+}
+
+@keyframes greenLight {
+  0%,
+  50% {
+    background-color: #111;
+  }
+  52%,
+  80% {
+    background-color: #00aa00;
+  }
+  82%,
+  100% {
+    background-color: #00aa00;
+  }
+}
