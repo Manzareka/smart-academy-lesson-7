@@ -8,7 +8,7 @@
 }
 
 .body {
-  background-image: url("/images/traffic-jam2.jpg");
+  background-image: url("../images/traffic-jam2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -127,7 +127,7 @@
 }
 .traffic-lights::after {
   content: "";
-  width: 50px;
+  width: 30px;
   height: 100%;
   position: absolute;
   top: 100%;
